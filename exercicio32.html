@@ -1,0 +1,45 @@
+32) Crie uma função que informa se tem os caracteres 'dota' no parâmetro informado.
+<br />    <br />
+<!DOCTYPE html>
+<html>
+ <head>
+    <script>
+
+        function localizarString(){
+            var string = document.getElementById('string').value;
+            var substring = document.getElementById('substring').value;
+
+            var posicao = string.indexOf(substring);
+            var resultado;
+
+            if( posicao === -1){
+                resultado = "Elemento não encontrado no texto";
+            }else{
+                resultado  = "Elemento encontrado! <br/>  Posicão do elemento:  " + posicao;
+            }
+                    
+            document.getElementById('resultado').innerHTML = resultado;
+
+        }
+
+    </script>
+ </head>
+ <body>
+
+    <div>
+        <div>
+            <label for="string"> TExto </label>
+            <input type="text" id="string">
+        </div>
+        <div>
+            <label for="substring"> Termo a ser encontrado </label>
+            <input type="text" id="substring">
+        </div>
+        <div>
+            <br>
+            <button id="botaoBucar"  onclick="localizarString()">  buscar </button>
+            <span id="resultado"></span>
+        </div>
+    </div>
+ </body>
+</html>

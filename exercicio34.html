@@ -1,0 +1,25 @@
+(34) Agora faça um botão que ao clicar nele informa se a pessoa acertou o número.
+
+<script>
+
+    function numeroAleatorio() {
+
+        randomNumber = Math.floor(Math.random() * (5 - 1) + 1);
+
+        var number = document.getElementById('number').value;
+
+        if(randomNumber == number){
+            alert("Voce acertou: " + randomNumber)
+        }else{
+            alert("voce errou: " + randomNumber)
+        }
+
+    }
+
+</script>
+
+
+<Label> Digite um numero de 1 a 5</Label>
+<input id="number" type="number">
+
+<button onclick="numeroAleatorio()"> Validar </button>

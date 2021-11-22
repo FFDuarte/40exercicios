@@ -1,0 +1,51 @@
+Crie o seguinte array: var deuses = ['Aegir', 'Aud', 'Balder']
+
+E Exiba a quantidade/comprimento que ele tem com a função .length <br>
+E exiba um a um com alert() - De preferencia para laços de repetição (for, forEach, while, do{}while)<br>
+E exiba um a um com alert() - De preferencia para funções com callbacks, Ex:(map, reduce, filter)<br>
+Adicione os 3 Deuses: ('Loki', 'Odin', 'Frey') com a função push()<br>
+E exiba de forma crescente @dica: .sort<br>
+E exiba de forma decrescente.<br>
+
+<br>
+<br>
+<br>
+
+
+<script>
+
+    var deuses = [' Aegir ' , ' Aud ' , ' Balder']
+    
+    //E Exiba a quantidade/comprimento que ele tem com a função .length
+    alert("Tamanho do array: " + deuses.length)
+    
+    
+    //E exiba um a um com alert() - De preferencia para laços de repetição (for, forEach, while, do{}while)
+    let i = 0;
+    let text = "";
+
+    while(deuses[i]){
+        text  += deuses[i];
+        i++
+    }
+    alert(text);
+
+
+    //E exiba um a um com alert() - De preferencia para funções com callbacks, Ex:(map, reduce, filter)
+    const exibirNomes = deuses.map(function(elem){
+        return  alert(elem);
+    });
+   
+    //Adicione os 3 Deuses: ('Loki', 'Odin', 'Frey') com a função push()
+    var adicionarElementos = deuses.push(' Loki ' , ' Odin ' , ' Frey ')
+    alert(deuses);
+    // E exiba de forma crescente @dica: .sort
+    numeros = [ 1 , 80,50 ,4 ,5 ,22 ,8,3,41,9,6,2,49];
+    numeros.sort((a,b) => a-b);
+    alert(numeros);
+
+    // E exiba de forma decrescente
+    numeros.sort((a,b) => b-a);
+    alert(numeros);
+
+</script>

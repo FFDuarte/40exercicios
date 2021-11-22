@@ -1,0 +1,29 @@
+Começa a usar o ESLint e usar o padrão Air Bnb, procura algum padrão de estruturação dos diretórios.
+Recomendo entender bem o uso dos hooks useState e useEffect, você terá um middleware chamado redux, 
+que você poderá utilizar para acessar estados de diferentes partes da aplicação, sem a necessidade de ficar passando eles como props.
+Você pode usar também o useContext no lugar do redux, ele é do nativo do React, mas conforma aplicação vai crescendo, 
+é melhor mesmo usar o redux. Algo muito importante também é a questão da autenticação e criação de rotas.
+O resto é javascript, depois você pode pegar o framework Next Js que é um framework baseado em React.
+Ah! Não esquece de tipagem e testes!
+
+
+
+O básico seria componentes, props, props.children e os hooks mais utilizados (useState, useEffect, useContext e useCallback)
+E, como falaram ai acima, não utilize componentes de classes hoje em dia, isso é a forma ultrapassada de se fazer.
+Só lide com eles se, por um acaso, pegar um código que era feito em classes.
+
+
+Olha, antes de vc sair por aí utilizando hooks, aprende por meio de classes o que é o ciclo de vida de um componente, 
+mas antes disso, veja o motivo do React ter nascido, estude um pouco sobre sua história e os motivos das mudanças, 
+um pouco de HTML, css e o básico de JavaScript, também entenda o conceito da Virtual DOM. 
+Isso se você quiser ver sentido no que você está codando..
+senão, só estuda um pouco de JavaScript e vê uns tutoriais por aí do pessoal replicando sites
+
+
+
+O básico é aprender useState, useEffect e useRef. Dps pegar pra ver os outros hooks.
+Aprender algo pra gerenciar estado global como redux, ou o próprio useContext do react.
+E saber o básico de javascript, como percorrer um array, trabalhar com objetos etc...
+Em relação a classe, hj em dia só serve pra projeto legado msm, projetos mais recentes a maioria se não 100% estão em functions c/ hooks. 
+Se eu fosse vc aprenderia function e quando precisasse mexer em algo em classe iria atrás.
+Mexi em classe durante um ano lá por 2018, mas hj em dia quando preciso mexer sempre recorro ao google pra algumas coisas.
