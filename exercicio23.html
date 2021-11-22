@@ -1,0 +1,26 @@
+(23) Dentro da div com o id 'resultado', escreva 1x ('Repetição'). @dica 'innerHTML', el.innerHTML = 'Repetição';
+
+<br><br>
+<br>
+
+
+<html>
+<body>
+
+<p id="Enviar">Repeticao</p>
+
+<p>Eviar repeticao para outra div</p>
+
+<button onclick="myFunction()"> Enviar </button>
+
+<p id="resultado"></p>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("Enviar").innerHTML;
+    document.getElementById("resultado").innerHTML = x;
+  }
+</script>
+
+</body>
+</html>

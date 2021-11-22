@@ -1,0 +1,32 @@
+
+
+<body>
+  
+    <style type="text/css">
+    #quadrado {
+      height: 100px;
+      width: 100px;
+    }
+    </style>
+  
+    <div id="quadrado" style="background-color: #f00;"></div>  
+    <br>
+    <label> Alterar a cor do quadrado selecionando umas da oções abaixo</label>
+    <br>
+    <button onclick={verde()}> Verde </button>
+    <button onclick={vermelho()}> Vermelho </button>
+
+  
+    <script type="text/javascript">
+        function verde(){
+            return document.getElementById("quadrado").style = "background-color: green;";
+        }
+        function vermelho(){
+            return document.getElementById("quadrado").style = "background-color: red;";
+        }
+    </script>
+  
+  
+  </body>
+
+

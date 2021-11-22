@@ -1,0 +1,24 @@
+<script>
+
+    var atual_state = 'DESLIGADA';
+
+    function mudaEstado() {
+        atual_state === 'DESLIGADA' ? atual_state = 'LIGADA' : atual_state = 'DESLIGADA';
+        return atual_state;
+    }
+
+    function ligaDesliga() {
+
+        if (atual_state === 'DESLIGADA')
+            document.getElementById('lampada').src = 'https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/lampada-on.jpg';
+        else
+            document.getElementById('lampada').src = 'https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true';
+
+
+        mudaEstado();
+
+    }
+</script>
+
+<button onclick="ligaDesliga()"> ligar e desligar lampada</button>
+<img id="lampada" src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true">

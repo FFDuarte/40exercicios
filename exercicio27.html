@@ -1,0 +1,27 @@
+(27) Dentro da div com o id 'resultado', escreva 5x ('Repetição'). (agora com while)
+<br><br><br><br>
+
+
+<button onclick="myFunction()">Mostrar</button>
+
+<div id="resultado"></div>
+
+<script>
+    function myFunction(){
+
+    
+    div = document.getElementById("resultado");
+
+    var repeticoes = ["reticao1:  " ,"reticao2: " , "reticao3: " , "reticao4: " , "reticao5"   ];
+    let i = 0;
+    let text = "";
+
+    while(repeticoes[i]){
+        text  += repeticoes[i];
+        div.innerHTML =   text;
+        i++
+    }
+
+}
+    
+</script>

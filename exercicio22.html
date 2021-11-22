@@ -1,0 +1,20 @@
+(22) Crie uma função que recebe o ano de nascimento da pessoa informando se ela é maior de idade ou menor.
+
+<script>
+
+    function idade(ano){
+        ano = 2021 - ano ;
+
+        if(ano >= 18){
+            return alert("Maior de idade: "+ ano);
+        }else{
+            return alert ("Menor de idade: " + ano);
+        }
+    }
+
+
+    var ano = parseInt(prompt("Digite seu ano de nascimento"));
+
+    idade(ano);
+
+</script>

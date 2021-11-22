@@ -1,0 +1,20 @@
+
+<form name="formSaudacao"  onsubmit="return saudacao()" method="post">
+    <label> Nome</label>
+    <input type="text" name="nome">
+
+    <label>Sobrenome</label>
+    <input type="text" name="sobrenome">
+
+    <button>Saudação</button>
+</form>
+
+<script>
+    function saudacao(){
+        var nome = document.forms["formSaudacao"]["nome"].value;
+        var sobrenome = document.forms["formSaudacao"]["sobrenome"].value;
+
+        alert("Ola " + nome +" " + sobrenome)
+
+    }
+</script>

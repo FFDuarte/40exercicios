@@ -1,0 +1,28 @@
+(29) Dentro da div com o id 'resultado', escreva os números de 0 ~ 10 (escolha uma das opções acima)
+
+<br><br><br><br><br>
+
+<button onclick="myFunction()">Mostrar</button>
+<br><br>
+<div id="resultado"></div>
+
+<script>
+    function myFunction(){
+
+    
+    div = document.getElementById("resultado");
+
+    
+    let i = 0;
+    let text = 0;
+
+    do{
+        text += "  " + i;
+        div.innerHTML = text;
+        i++ 
+    }
+    while(i <= 10) 
+
+}
+    
+</script>

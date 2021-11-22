@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Lampada</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src='https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true' id="myLuz">
+    <script>
+        var img = document.getElementById("myLuz");
+    	function interruptorOff() {
+        	 img.src = 'https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true';
+        }
+      	
+      	function interruptorOn() {
+         	 img.src = 'https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/lampada-on.jpg';
+        }
+      
+      	function lampadaQuebrar() {
+         	img.src = "https://i.pinimg.com/originals/c3/5f/23/c35f2348f1ee654c605adc3b7c3a72ca.jpg"; 
+        }
+      
+      	img.addEventListener("mouseover", interruptorOn);
+      	img.addEventListener("mouseout", interruptorOff);
+      	img.addEventListener("click", lampadaQuebrar);
+    </script>
+  </body>
+</html>

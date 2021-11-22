@@ -1,0 +1,16 @@
+(26) Dentro da div com o id 'resultado', escreva 5x ('Repetição'). (agora com forEach)
+<br><br><br><br>
+
+
+<button onclick="repeticoes.forEach(myFunction)">Mostrar</button>
+
+<p id="demo"></p>
+
+<script>
+    demoP = document.getElementById("demo");
+    var repeticoes = ["reticao1" ,"reticao2" , "reticao3" , "reticao4" , "reticao5"   ];
+
+    function myFunction(item, index) {
+        demoP.innerHTML = demoP.innerHTML + "index[" + index + "]: " + item + "<br>";
+    }
+</script>

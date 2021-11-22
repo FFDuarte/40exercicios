@@ -1,0 +1,35 @@
+(24) Dentro da div com o id 'resultado', escreva 2x ('Repetição'). <br><br><br><br>
+
+
+
+<html>
+<head>
+    <title>teste</title>
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+        
+        function gravar(){
+           
+            var div = document.getElementById("resultado");
+
+            function repeticao(){
+                for(i = 0 ; i<=3 ; i++ ){
+                    console.log(i);
+                        div.innerText = " Repeticao " + i;
+                }
+                
+            }
+
+            return repeticao();
+        
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <button id="btnEnviar" onclick="gravar()" >Enviar</button>
+    </div>
+    <div id="resultado">
+    </div>
+</body>
+</html>
